@@ -1,0 +1,4 @@
+#Wed Oct 17 17:12:28 CEST 2018
+base.0=/home/gigem/AndroidStudioProjects/gigya-android-sdk/app/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex

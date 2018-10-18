@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activity_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/inputAreaView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/firstName_input_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/firstName_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/field_firstName" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/lastName_input_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/lastName_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/field_lastName" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/button_update"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:text="@string/button_text_update" />
+
+
+            <Button
+                android:id="@+id/button_logout"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:text="@string/button_text_logout" />
+
+            <Button
+                android:id="@+id/button_optin"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:text="Fingerprint OptIn" />
+
+            <Button
+                android:id="@+id/button_optout"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:text="Fingerprint OptOut" />
+
+            <Button
+                android:id="@+id/button_lock"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:text="Fingerprint Lock" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/progress_bar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/black"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="15dp">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/progress_bar_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+</FrameLayout>

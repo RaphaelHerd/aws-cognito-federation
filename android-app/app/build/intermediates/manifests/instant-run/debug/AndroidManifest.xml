@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gigya.android.sdk.sample"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/ActionBarTheme" >
+        <activity
+            android:name="com.gigya.android.sdk.sample.ui.activities.InitializeActivity"
+            android:theme="@style/LaunchTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gigya.android.sdk.sample.ui.activities.LoginActivity"
+            android:label="Login Method" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activities.InitializeActivity" />
+        </activity>
+        <activity
+            android:name="com.gigya.android.sdk.sample.ui.activities.AccountActivity"
+            android:label="Account" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activities.LoginActivity" />
+        </activity>
+
+        <!-- Gigya's Android SDK -->
+        <activity
+            android:name="com.gigya.socialize.android.ui.HostActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.gigya.socialize.android.login.providers.WebLoginActivity"
+            android:allowTaskReparenting="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="gsapi"
+                    android:scheme="com.gigya.android.sdk.sample" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/com_facebook_activity_theme" />
+        <activity android:name="com.facebook.CustomTabMainActivity" />
+
+        <provider
+            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.gigya.android.sdk.sample.lifecycle-trojan"
+            android:exported="false"
+            android:multiprocess="true" />
+        <!--
+         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+         with the application context. This config is merged in with the host app's manifest,
+         but there can only be one provider with the same authority activated at any given
+         point; so if the end user has two or more different apps that use Facebook SDK, only the
+         first one will be able to use the provider. To work around this problem, we use the
+         following placeholder in the authority to identify each host application as if it was
+         a completely different provider.
+        -->
+        <provider
+            android:name="com.facebook.internal.FacebookInitProvider"
+            android:authorities="com.gigya.android.sdk.sample.FacebookInitProvider"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.gigya.android.sdk.sample.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

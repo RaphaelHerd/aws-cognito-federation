@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_login_activity"
+            android:textColor="@color/login_activity_title"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_native_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Native Login" />
+
+        <Button
+            android:id="@+id/btn_raas_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="RaaS Login" />
+
+        <Button
+            android:id="@+id/fingerprint_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="Fingerprint Validate" />
+
+        <EditText
+            android:id="@+id/screenset_prefix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Screen Set Prefix"
+            android:text="en"/>
+
+
+        <EditText
+            android:id="@+id/screenset_lang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Screen Set Language"
+            android:text="Default"/>
+
+
+    </LinearLayout>
+</LinearLayout>

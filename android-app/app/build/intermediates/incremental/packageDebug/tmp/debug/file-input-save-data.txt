@@ -1,0 +1,19 @@
+#Internal package file, do not edit.
+#Thu Oct 18 13:07:30 CEST 2018
+1.base=/home/gigem/AndroidStudioProjects/gigya-android-sdk/app/build/intermediates/transforms/dexMerger/debug/65
+2.path=classes.dex
+0.baseType=DIRECTORY
+3.baseType=DIRECTORY
+2.base=/home/gigem/AndroidStudioProjects/gigya-android-sdk/app/build/intermediates/transforms/dexMerger/debug/63
+3.set=DEX
+2.set=DEX
+1.baseType=DIRECTORY
+3.path=classes.dex
+count=4
+1.set=DEX
+0.path=classes.dex
+3.base=/home/gigem/AndroidStudioProjects/gigya-android-sdk/app/build/intermediates/transforms/dexMerger/debug/66
+0.set=DEX
+0.base=/home/gigem/AndroidStudioProjects/gigya-android-sdk/app/build/intermediates/transforms/dexMerger/debug/64
+2.baseType=DIRECTORY
+1.path=classes.dex
