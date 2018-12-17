@@ -1,0 +1,1 @@
+include ':app', ':PhoneVerification', ':farminapigateway', ':farmin-android-apigateway-proxy-1.0'

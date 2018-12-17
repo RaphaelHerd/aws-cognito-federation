@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FirebasePhoneVerificationDemo.iml" filepath="$PROJECT_DIR$/FirebasePhoneVerificationDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PhoneVerification/PhoneVerification.iml" filepath="$PROJECT_DIR$/PhoneVerification/PhoneVerification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/farmin-android-apigateway-proxy-1.0/farmin-android-apigateway-proxy-1.0.iml" filepath="$PROJECT_DIR$/farmin-android-apigateway-proxy-1.0/farmin-android-apigateway-proxy-1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/farminapigateway/farminapigateway.iml" filepath="$PROJECT_DIR$/farminapigateway/farminapigateway.iml" />
+    </modules>
+  </component>
+</project>

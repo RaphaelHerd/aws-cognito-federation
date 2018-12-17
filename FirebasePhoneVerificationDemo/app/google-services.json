@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "977640568993",
+    "firebase_url": "https://farmin-dev.firebaseio.com",
+    "project_id": "farmin-dev",
+    "storage_bucket": "farmin-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977640568993:android:66cf0c8d397293b5",
+        "android_client_info": {
+          "package_name": "com.demo.firebasephoneverificationdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977640568993-3baflvcjhvgpglfq65fd2dds5j3vhb14.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.demo.firebasephoneverificationdemo",
+            "certificate_hash": "30f7197a825be338aa7b07fbe1303057ed2e432b"
+          }
+        },
+        {
+          "client_id": "977640568993-kpt2s0sv6js5i1brjhi3s3vebkaq800o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbxW-Ua8jKS7zBgCi4nd9CPeC6S1e5Wz8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977640568993-kpt2s0sv6js5i1brjhi3s3vebkaq800o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
